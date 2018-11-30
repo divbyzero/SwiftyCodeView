@@ -24,12 +24,12 @@ Pod::Spec.new do |s|
   s.default_subspec = "Core"
 
   s.subspec "Core" do |ss|
-    ss.source_files = 'SwiftyCodeView/Classes/SwiftyCodeView/*'
+    ss.source_files = 'SwiftyCodeView/Classes/SwiftyCodeView/*.{swift,xib}'
     ss.frameworks = 'UIKit'
   end
 
   s.subspec "RxSwift" do |ss|
-    ss.source_files = "SwiftyCodeView/Classes/RxSwiftyCodeView/*"
+    ss.source_files = "SwiftyCodeView/Classes/RxSwiftyCodeView/*.swift"
     ss.dependency "SwiftyCodeView/Core"
     ss.dependency "RxSwift"
     ss.dependency "RxCocoa"
